@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Fidélitée</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/styles.css'>
+    <script src='assets/Javascript/main.js'></script>
+</head>
+<body>
+    <header id="header" class="header">
+        <a href="index.html">
+            <img src="assets/images/Logo (grand).webp" id="logo_P">
+        </a> 
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="showroom.html">Voitures en Vente</a></li>
+            <li><a href="fidelity.html">Programme de Fidélitée</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cookies.html">Politique de cookies</a></li>
+            <li>
+                <a id="cart-icon" href="checkout.html">
+                    <img id="cart-icon-img" src="assets/images/cart-icon.png" alt="Cart">
+                    <span id="cart-count">0</span>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <div class="container-fidelity">
+        <h1>Gagnez une voture gratuite !!!!!</h1>
+        <p>En temps que client loyal vous avez la possibilité de gagner une voiture gratuite</p>
+        <div class="rewards">
+            <div class="reward-item">
+                <h2>Chiron</h2>
+                <button class="redeem-btn">Réclamer</button>
+            </div>
+            <div class="reward-item">
+                <h2>LaFerrari</h2>
+                <button class="redeem-btn">Réclamer</button>
+            </div>
+            <div class="reward-item">
+                <h2>SF90 Stradale</h2>
+                <button class="redeem-btn">Réclamer</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="redeem-modal" id="redeemModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeModal">&times;</span>
+            <button class="hidden-button" id="hiddenButton">Réclamer mainteant</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Acceuil</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/styles.css'>
+    <script src='assets/Javascript/main.js'></script>
+</head>
+<body>
+    <header id="header" class="header">
+        <a href="index.html">
+            <img src="assets/images/Logo (grand).webp" id="logo_P">
+        </a> 
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="showroom.html">Voitures en Vente</a></li>
+            <li><a href="fidelity.html">Programme de Fidélitée</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cookies.html">Politique de cookies</a></li>
+            <li>
+                <a id="cart-icon" href="checkout.html">
+                    <img id="cart-icon-img" src="assets/images/cart-icon.png" alt="Cart">
+                    <span id="cart-count">0</span>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <div id="index-overlay"></div>
+    <video autoplay muted loop id="index-background-video" preload="auto">
+        <source src="assets/vidéos/index_background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div id="index-content">
+        <h1 id="index-title">Bienvenue sur Vroum Vroom</h1>
+        <p id="index-subtitle">Votre destination ultime pour les meilleures voitures</p>
+    </div>
+    <div id="reviews-section">
+        <table id="reviews-table">
+            <tr>
+                <th class="review-header"></th>
+                <th class="review-header"></th>
+                <th class="review-header"></th>
+                <th class="review-header"></th>
+                <th class="review-header"></th>
+            </tr>
+            <tr>
+                
+                <td>
+                    <h4>Alice</h4>
+                    <div class="stars">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p>Excellente expérience !</p>
+                </td>
+                <td>
+                    <h4>Bob</h4>
+                    <div class="stars">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star empty">★</span>
+                    </div>
+                    <p>Très satisfait de mon achat.</p>
+                </td>
+                <td>
+                    <h4>Charlie</h4>
+                    <div class="stars">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star empty">★</span>
+                    </div>
+                    <p>Service client réactif et professionnel.</p>
+                </td>
+                <td>
+                    <h4>Diane</h4>
+                    <div class="stars">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p>Voiture en parfait état.</p>
+                </td>
+                <td>
+                    <h4>Edward</h4>
+                    <div class="stars">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star empty">★</span>
+                    </div>
+                    <p>Bonne affaire !</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

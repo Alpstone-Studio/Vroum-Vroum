@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Showroom</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/styles.css'>
+    <script src='assets/javascript/main.js' defer></script>
+</head>
+<body>
+    <header id="header" class="header">
+        <a href="index.html">
+            <img src="assets/images/Logo (grand).webp" id="logo_P">
+        </a> 
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="showroom.html">Voitures en Vente</a></li>
+            <li><a href="fidelity.html">Programme de Fidélitée</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cookies.html">Politique de cookies</a></li>
+            <li>
+                <a id="cart-icon" href="checkout.html">
+                    <img id="cart-icon-img" src="assets/images/cart-icon.png" alt="Cart">
+                    <span id="cart-count">0</span>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <div id="filter-all">
+        <img id="filter-icon" src="assets/images/filter.png" alt="Filtres">
+        <div id="filters">
+            <label for="brand-filter">Marque :</label>
+            <select id="brand-filter">
+                <option value="">Toutes</option>
+                <option value="Audi">Audi</option>
+                <option value="BMW">BMW</option>
+                <option value="Bugatti">Bugatti</option>
+                <option value="Ferrari">Ferrari</option>
+            </select>
+        
+         <button id="apply-filters">Appliquer les filtres</button>
+        </div>
+    </div>
+    <div class="marque" id="Audi">
+        <div class="bordure"></div>
+        <div class="nom-marque">
+            <img id="audi-logo" src="assets/images/Audi.png">
+            <h1>Audi</h1>
+        </div>
+        <div class="voitures">
+            <div class="voiture" data-id="1">
+                <h2>RS6</h2>
+                <img src="assets/images/rs6.png">
+                <div class="voitureligne"></div>
+                <h3>La puissance maîtrisée.</h3>
+                <button class="add-to-cart">Ajouter au panier</button>
+                <a href="rs6.html">En savoir plus</a>
+            </div>
+            <div class="voiture" data-id="2">
+                <h2>RS7</h2>
+                <img src="assets/images/rs7.png">
+                <div class="voitureligne"></div>
+                <h3>Élégance surpuissante.</h3>
+                <button class="add-to-cart">Ajouter au panier</button>
+                <a href="rs7.html">En savoir plus</a>
+            </div>
+            <div class="voiture" data-id="3">
+                <h2>R8</h2>
+                <img src="assets/images/r8.png">
+                <div class="voitureligne"></div>
+                <h3>L'adrénaline incarnée.</h3>
+                <button class="add-to-cart">Ajouter au panier</button>
+                <a href="r8.html">En savoir plus</a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="marque" id="BMW">
+        <div class="bordure"></div>
+        <div class="nom-marque">
+            <img class="logo-marque" src="assets/images/BMW.png">
+            <h1>BMW</h1>                                 
+        </div>
+        <div class="voitures">
+            <div class="voiture" data-id="4">
+                <h2>M3</h2>
+                <img src="assets/images/m3.png">
+                <div class="voitureligne"></div>
+                <h3>Performances icôniques.</h3>
+                <button class="add-to-cart">Ajouter au panier</button>
+                <a href="m3.html">En savoir plus</a>
+            </div>
+            <div class="voiture" data-id="5">
+                <h2>M5 Competition</h2>
+                <img src="assets/images/m5comp.png">
+                <div class="voitureligne"></div>
+                <h3>La puissance ultime.</h3>
+                <button class="add-to-cart">Ajouter au panier</button>
+                <a href="m5competition.html">En savoir plus</a>
+            </div>
+            <div class="voiture" data-id="6">
+                <h2>M8</h2>
+                <img src="assets/images/m8.png">
+                <div class="voitureligne"></div>
+                <h3>Luxe et performance.</h3>
+                <button class="add-to-cart">Ajouter au panier</button>
+                <a href="m8.html">En savoir plus</a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="marque" id="Bugatti">
+        <div class="bordure"></div>
+        <div class="nom-marque">
+            <img class="logo-marque" src="assets/images/Bugatti.png">
+            <h1>Bugatti</h1>
+        </div>
+        <div class="voitures">
+            <div class="voiture" data-id="7">
+                <h2>Chiron</h2>
+                <img src="assets/images/chiron.png">
+                <div class="voitureligne"></div>
+                <h3>La finesse française.</h3>
+                <button class="add-to-cart">Ajouter au panier</button>
+                <a href="chiron.html">En savoir plus</a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="marque" id="Ferrari">
+        <div class="bordure"></div>
+        <div class="nom-marque">
+            <img class="logo-marque" src="assets/images/Ferrari.png">
+            <h1>Ferrari</h1>
+        </div>
+        <div class="logo-marque"></div>
+        <div class="voitures">
+            <div class="voiture" data-id="8">
+                <h2>812 Competizione</h2>
+                <img src="assets/images/812comp.png">
+                <div class="voitureligne"></div>
+                <h3>La performance déchaînée.</h3>
+                <button class="add-to-cart">Ajouter au panier</button>
+                <a href="812competizione.html">En savoir plus</a>
+            </div>
+            <div class="voiture" data-id="9">
+                <h2>SF90 Stradale</h2>
+                <img src="assets/images/sf90stradale.png">
+                <div class="voitureligne"></div>
+                <h3>L'innovation radicale.</h3>
+                <button class="add-to-cart">Ajouter au panier</button>
+                <a href="sf90stradale.html">En savoir plus</a>
+            </div>
+            <div class="voiture" data-id="10">
+                <h2>F8 Tributo</h2>
+                <img src="assets/images/f8tributo.png">
+                <div class="voitureligne"></div>
+                <h3>La célébration de la vitesse.</h3>
+                <button class="add-to-cart">Ajouter au panier</button>
+                <a href="f8tributo.html">En savoir plus</a>
+            </div>
+            <div class="voiture" data-id="11">
+                <h2>LaFerrari</h2>
+                <img src="assets/images/laferrari.png">
+                <div class="voitureligne"></div>
+                <h3>L'essence du prestige.</h3>
+                <button class="add-to-cart">Ajouter au panier</button>
+                <a href="laferrari.html">En savoir plus</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

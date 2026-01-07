@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Caisse</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/styles.css'>
+    <script src='assets/javascript/main.js' defer></script>
+</head>
+<body>
+    <header id="header" class="header">
+        <a href="index.html">
+            <img src="assets/images/Logo (grand).webp" id="logo_P">
+        </a> 
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="showroom.html">Voitures en Vente</a></li>
+            <li><a href="fidelity.html">Programme de Fidélitée</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cookies.html">Politique de cookies</a></li>
+            <li>
+                <a id="cart-icon" href="checkout.html">
+                    <img id="cart-icon-img" src="assets/images/cart-icon.png" alt="Cart">
+                    <span id="cart-count">0</span>
+                </a>
+            </li>
+        </ul>
+    </header>
+        <div id="pay">
+            <h1>Caisse de Paiement</h1>
+            <section id="cart">
+                <h2>Panier</h2>
+                <ul id="cart-items"></ul>
+                <p>Total: <span id="total-price">0</span></p>
+                <button id="checkout">Passer à la caisse</button>
+            </section>
+        
+            <br>
+            <form id="paymentForm" style="display: none;">
+                <label for="name">Nom:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+            <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="cardNumber">Numéro de Carte:</label>
+                <input type="text" id="cardNumber" name="cardNumber" required pattern="\d{16}" maxlength="16">
+                <br>
+                <label for="expiryDate">Date d'Expiration:</label>
+                <input type="month" id="expiryDate" name="expiryDate" required>
+                <br>
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" required pattern="\d{3}" maxlength="3">
+                <br>
+                <button type="submit">Payer</button>
+            </form>
+            <div id="message"></div>
+        </div>
+    </body>
+    </html>
+    
